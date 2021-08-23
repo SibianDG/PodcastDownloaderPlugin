@@ -1,0 +1,12 @@
+#list-podcasts {
+    display: flex;
+    flex-direction: column;
+}
+
+#list-podcasts a {
+    margin: .5rem 0;
+}
+
+a {
+    color: #055505;
+}

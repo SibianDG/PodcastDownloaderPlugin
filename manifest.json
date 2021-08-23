@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Podcast Donwloader",
+  "description": "Plugin to download podcasts from podcasts.google.com",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "512": "icon.png"
+    },
+    "default_title": "Podcast downloader",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "512": "icon.png"
+  },
+  "permissions": ["storage", "tabs"]
+}
