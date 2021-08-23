@@ -6,7 +6,8 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://podcasts.google.com/feed/*",
+        "https://podcasts.google.com/*"
       ],
       "js": ["content.js"]
     }

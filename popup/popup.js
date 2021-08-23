@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', function() {
     const listPodcastsHTML = document.getElementById('list-podcasts');
     chrome.runtime.sendMessage({type: "get"}, function(response) {
         let episodes = response.data;
